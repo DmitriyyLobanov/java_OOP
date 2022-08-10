@@ -1,27 +1,21 @@
 package Seminar_1;
 
-public class Person {
+abstract class Person {
     private String name;
     private  String surname;
+
 
     public Person(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }
 
-    public String getName() {
-        return name;
+    public Person() {
+
     }
 
-    public String getSurname() {
-        return surname;
-    }
+    abstract String getName();
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                '}';
-    }
+    abstract String getSurname();
+
 }
