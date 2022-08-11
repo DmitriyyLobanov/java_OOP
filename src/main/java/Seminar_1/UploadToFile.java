@@ -6,8 +6,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
-public class UploadToFile {
-    public static void uploadToTXT(Tree tree)  {
+public class UploadToFile implements BaseUploader{
+    public void uploadToTXT(Tree tree)  {
 
         try {
             Files.createFile(Path.of("C:\\Users\\Zver\\Desktop\\GeekBrains\\OOP\\java_OOP\\src\\main\\java\\Seminar_1\\" +
@@ -25,5 +25,20 @@ public class UploadToFile {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Override
+    public void uploadToJSON(Tree tree) {
+        //TODO
+    }
+
+    @Override
+    public void UploadToXML(Tree tree) {
+        //TODO
+    }
+
+    @Override
+    public void uploadToCSV(Tree tree) {
+        //TODO
     }
 }

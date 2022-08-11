@@ -2,8 +2,8 @@ package Seminar_1;
 
 import java.util.List;
 
-public class Research {
-    public static void printChilds(String name, Tree tree){
+public class Research implements BaseResearcher {
+    public void printChilds(String name, Tree tree){
         List<Link> links = tree.getLinks();
 
         for (Link el: links) {
@@ -15,7 +15,7 @@ public class Research {
 
     }
 
-    public  static void printParent(String name, Tree tree){
+    public void printParent(String name, Tree tree){
         List<Link> links = tree.getLinks();
 
         for (Link el: links) {
@@ -26,7 +26,7 @@ public class Research {
         }
     }
 
-    public  static  void printGrandSon(String name, Tree tree){
+    public void printGrandSon(String name, Tree tree){
         List<Link> links = tree.getLinks();
 
         for (Link el:links) {
@@ -37,7 +37,7 @@ public class Research {
         }
     }
 
-    public static void printGrandParent(String name, Tree tree){
+    public void printGrandParent(String name, Tree tree){
         List<Link> links = tree.getLinks();
 
         for (Link el:links) {
@@ -48,7 +48,7 @@ public class Research {
         }
     }
 
-    public static void printBrother(String name, Tree tree){
+    public void printBrother(String name, Tree tree){
         List<Link> links = tree.getLinks();
 
         for (Link el:links) {
@@ -59,7 +59,7 @@ public class Research {
         }
     }
 
-    public static void printSister(String name, Tree tree){
+    public void printSister(String name, Tree tree){
         List<Link> links = tree.getLinks();
 
         for (Link el:links) {
