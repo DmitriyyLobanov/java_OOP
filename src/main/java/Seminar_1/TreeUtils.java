@@ -2,7 +2,7 @@ package Seminar_1;
 
 public interface TreeUtils {
 
-    void addLink(Person p_1, Person p_2, Relation link_1, Relation link_2);
+    void addLink(Person p1, Person p2, Relation link1, Relation link2);
 
     void removeLink(Integer index);
 

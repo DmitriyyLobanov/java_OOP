@@ -11,22 +11,22 @@ public class Tree extends BaseTree {
     }
 
     @Override
-    public void addLink(Person p_1, Person p_2, Relation link_1, Relation link_2) {
-        Link l1 = new Link(p_1, p_2, link_1);
-        Link l2 = new Link(p_2, p_1, link_2);
+    public void addLink(Person p1, Person p2, Relation link1, Relation link2) {
+        Link l1 = new Link(p1, p2, link1);
+        Link l2 = new Link(p2, p1, link2);
 
         links.add(l1);
         links.add(l2);
     }
 
     @Override
-    public void removeLink(Integer index) {
-        //TODO
+    public void removeLink(Integer index) throws UnsupportedOperationException {
+
     }
 
     @Override
-    public void replaceLink(Person oldItem, Person newItem) {
-        //TODO
+    public void replaceLink(Person oldItem, Person newItem) throws UnsupportedOperationException {
+
     }
 }
 

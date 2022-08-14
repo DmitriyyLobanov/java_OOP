@@ -1,6 +1,6 @@
 package Seminar_1;
 
-public interface BaseResearcher {
+public interface    BaseResearcher {
 
     void printChilds(String name, Tree tree);
 

@@ -1,14 +1,14 @@
-Link{personFirst=Person{name='Vitaliyy', surname='L'}, personSecond=Person{name='Dmitriyy', surname='L'}, link=PARENT}
-Link{personFirst=Person{name='Dmitriyy', surname='L'}, personSecond=Person{name='Vitaliyy', surname='L'}, link=CHILD}
-Link{personFirst=Person{name='Vitaliyy', surname='L'}, personSecond=Person{name='Victor', surname='L'}, link=PARENT}
-Link{personFirst=Person{name='Victor', surname='L'}, personSecond=Person{name='Vitaliyy', surname='L'}, link=CHILD}
-Link{personFirst=Person{name='Lidia', surname='S'}, personSecond=Person{name='Vitaliyy', surname='L'}, link=PARENT}
-Link{personFirst=Person{name='Vitaliyy', surname='L'}, personSecond=Person{name='Lidia', surname='S'}, link=CHILD}
-Link{personFirst=Person{name='Lidia', surname='S'}, personSecond=Person{name='Dmitriyy', surname='L'}, link=GRANDPARENT}
-Link{personFirst=Person{name='Dmitriyy', surname='L'}, personSecond=Person{name='Lidia', surname='S'}, link=GRANDSON}
-Link{personFirst=Person{name='Lidia', surname='S'}, personSecond=Person{name='Victor', surname='L'}, link=GRANDPARENT}
-Link{personFirst=Person{name='Victor', surname='L'}, personSecond=Person{name='Lidia', surname='S'}, link=GRANDSON}
-Link{personFirst=Person{name='Artem', surname='L'}, personSecond=Person{name='Dmitriyy', surname='L'}, link=BROTHER}
-Link{personFirst=Person{name='Dmitriyy', surname='L'}, personSecond=Person{name='Artem', surname='L'}, link=BROTHER}
-Link{personFirst=Person{name='Irina', surname='L'}, personSecond=Person{name='Dmitriyy', surname='L'}, link=BROTHER}
-Link{personFirst=Person{name='Dmitriyy', surname='L'}, personSecond=Person{name='Irina', surname='L'}, link=SISTER}
+Link{personFirst=Person{name='Vitaliyy', surname='L', age'45}, personSecond=Person{name='Dmitriyy', surname='L', age'29}, link=PARENT}
+Link{personFirst=Person{name='Dmitriyy', surname='L', age'29}, personSecond=Person{name='Vitaliyy', surname='L', age'45}, link=CHILD}
+Link{personFirst=Person{name='Vitaliyy', surname='L', age'45}, personSecond=Person{name='Victor', surname='L', age'61}, link=PARENT}
+Link{personFirst=Person{name='Victor', surname='L', age'61}, personSecond=Person{name='Vitaliyy', surname='L', age'45}, link=CHILD}
+Link{personFirst=Person{name='Lidia', surname='S', age'82}, personSecond=Person{name='Vitaliyy', surname='L', age'45}, link=PARENT}
+Link{personFirst=Person{name='Vitaliyy', surname='L', age'45}, personSecond=Person{name='Lidia', surname='S', age'82}, link=CHILD}
+Link{personFirst=Person{name='Lidia', surname='S', age'82}, personSecond=Person{name='Dmitriyy', surname='L', age'29}, link=GRANDPARENT}
+Link{personFirst=Person{name='Dmitriyy', surname='L', age'29}, personSecond=Person{name='Lidia', surname='S', age'82}, link=GRANDSON}
+Link{personFirst=Person{name='Lidia', surname='S', age'82}, personSecond=Person{name='Victor', surname='L', age'61}, link=GRANDPARENT}
+Link{personFirst=Person{name='Victor', surname='L', age'61}, personSecond=Person{name='Lidia', surname='S', age'82}, link=GRANDSON}
+Link{personFirst=Person{name='Artem', surname='L', age'123}, personSecond=Person{name='Dmitriyy', surname='L', age'29}, link=BROTHER}
+Link{personFirst=Person{name='Dmitriyy', surname='L', age'29}, personSecond=Person{name='Artem', surname='L', age'123}, link=BROTHER}
+Link{personFirst=Person{name='Irina', surname='L', age'12}, personSecond=Person{name='Dmitriyy', surname='L', age'29}, link=BROTHER}
+Link{personFirst=Person{name='Dmitriyy', surname='L', age'29}, personSecond=Person{name='Irina', surname='L', age'12}, link=SISTER}
