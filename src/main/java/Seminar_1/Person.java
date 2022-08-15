@@ -1,21 +1,32 @@
 package Seminar_1;
 
-abstract class Person {
-    private String name;
-    private  String surname;
+abstract class Person implements Comparable<Person> {
+    protected String name;
+    protected   String surname;
 
+    protected Integer age;
 
-    public Person(String name, String surname) {
-        this.name = name;
-        this.surname = surname;
-    }
 
     public Person() {
 
     }
 
-    abstract String getName();
+    public Integer getAge() {return age;}
 
-    abstract String getSurname();
+    public String getName(){
+        return name;
+    }
 
+    public String getSurname(){
+        return surname;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age'" + age +
+                '}';
+    }
 }

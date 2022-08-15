@@ -1,15 +1,20 @@
 package Seminar_1;
 
+import java.io.IOException;
+import java.util.Collections;
+import java.util.Comparator;
+
 public class App {
-    public static void main(String[] args) {
-        Person person = new Man("Dmitriyy", "L");
-        Person person1 = new Man("Vitaliyy", "L");
-        Person person2 = new Man("Victor", "L");
-        Person person3 = new Woman("Lidia", "S");
-        Person person4 = new Man("Artem", "L");
-        Person person5 = new Woman("Irina", "L");
+    public static void main(String[] args) throws IOException {
+        Person person = new Man("Dmitriyy", "L", 29);
+        Person person1 = new Man("Vitaliyy", "L", 45);
+        Person person2 = new Man("Victor", "L", 61);
+        Person person3 = new Woman("Lidia", "S", 82);
+        Person person4 = new Man("Artem", "L", 123);
+        Person person5 = new Woman("Irina", "L", 12);
 
         BaseTree tree = new Tree();
+
         tree.addLink(person1, person, Relation.PARENT, Relation.CHILD);
         tree.addLink(person1, person2, Relation.PARENT, Relation.CHILD);
         tree.addLink(person3, person1, Relation.PARENT, Relation.CHILD);
@@ -29,6 +34,10 @@ public class App {
         //br.printBrother("Dmitriyy", tree);
         //br.printSister("Dmitriyy", tree);
         //bu.uploadToTXT(tree);
+        //System.out.println(person.compareTo(person1));
+
+
+
 
     }
 }
