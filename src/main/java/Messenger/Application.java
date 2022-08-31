@@ -17,7 +17,7 @@ public class Application {
         messenger.registrationUser(user3);
         messenger.registrationUser(user4);
 
-        messenger.renameMassage(user4,2,"RENAME text");
+        messenger.changeMassage(user4,2,"RENAME text");
         System.out.println(messenger.messageList);
         messenger.deleteMessage(user3, 1);
         System.out.println(messenger.messageList);

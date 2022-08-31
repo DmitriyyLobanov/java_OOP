@@ -1,14 +1,17 @@
 package Messenger;
 
+import Messenger.Interfaces.BaseMessenger;
+import Messenger.Interfaces.Utiliter;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class Messenger {
+public class Messenger implements BaseMessenger, Utiliter {
     static Logger LOGGER = Logger.getLogger(Messenger.class.getSimpleName());
-    List<Message> messageList;
+    protected List<Message> messageList;
 
-    List<Person> usersList;
+    protected List<Person> usersList;
     int messageCounter;
 
     public Messenger() {
@@ -39,7 +42,7 @@ public class Messenger {
         }
 
     }
-    public void renameMassage(Person person, int ID, String text){
+    public void changeMassage(Person person, int ID, String text){
         if(person.getRole() == Role.ADMIN){
             for(Message msg : messageList){
                 if(msg.getID() == ID){
