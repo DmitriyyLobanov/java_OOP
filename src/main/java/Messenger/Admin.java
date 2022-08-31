@@ -8,6 +8,6 @@ public class Admin extends Moderator{
     }
     public void renameMessage(int ID,String text){
         Messenger messenger = getMessenger();
-        messenger.renameMassage(this, ID, text);
+        messenger.changeMassage(this, ID, text);
     }
 }

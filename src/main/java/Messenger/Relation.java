@@ -1,7 +1,9 @@
 package Messenger;
 
 public class Relation {
-    Person person1;
-    Person preson2;
-    Relation link;
+    private Person person1;
+    private Person person2;
+    private Relation link;
+
+
 }
