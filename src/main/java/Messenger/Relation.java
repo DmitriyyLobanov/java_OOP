@@ -1,3 +1,6 @@
+/**
+ * Класс реализующий создание связей между личностями.
+ */
 package Messenger;
 
 public class Relation {

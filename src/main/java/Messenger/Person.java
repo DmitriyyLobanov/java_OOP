@@ -1,42 +1,88 @@
+/**
+ * Класс реализующий абстрактную сущность "Личность".
+ */
 package Messenger;
 
 public abstract class Person {
 
+        /**Поле имя*/
         private String name;
+
+        /**Поле роль*/
         private Role role;
+
+        /**Поле мессенджер*/
         private Messenger messenger;
 
-
-        public void setRole(Role role) {
+    /**
+     * Метод задания значения поля {@link Person#role}
+     * @param role роль.
+     */
+    public void setRole(Role role) {
             this.role = role;
         }
 
-        public Messenger getMessenger() {
+
+    /**
+     * Метод получения значения поля {@link Person#messenger}
+     * @return мессенджер.
+     */
+    public Messenger getMessenger() {
             return messenger;
         }
 
-        public String getName() {
+    /**
+     * Метод получения значения поля {@link Person#name}
+     * @return имя.
+     */
+    public String getName() {
             return name;
         }
 
-        public Role getRole() {
+    /**
+     * Метод получения значения поля {@link Person#role}
+     * @return роль.
+     */
+    public Role getRole() {
             return role;
         }
 
-        public void setName(String name) {
+    /**
+     * Метод задания значения поля {@link Person#name}
+     * @param name имя.
+     */
+    public void setName(String name) {
             this.name = name;
         }
 
+    /**
+     * Конструктор - созание экземпляра с заданием параметров.
+     * @param name имя.
+     * @param surname фамилия.
+     * @param ID id.
+     * @param role роль.
+     */
         public Person(String name, String surname, int ID, Role role) {
             this.role = role;
             this.name = name;
 
         }
-        public void setMessenger(Messenger messenger){
+
+    /**
+     * Метод задания значения поля {@link Person#messenger}
+     * @param messenger мессенджер.
+     */
+    public void setMessenger(Messenger messenger){
             this.messenger = messenger;
 
         }
-        public void sendMessage(Person receiver, String text){
+
+    /**
+     * Метод позволяющий отправить сообщение другому пользователю.
+     * @param receiver получатель.
+     * @param text текст сообщения.
+     */
+    public void sendMessage(Person receiver, String text){
             messenger.sendMessage(this,receiver,text);
         }
 
