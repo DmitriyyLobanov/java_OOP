@@ -1,8 +1,13 @@
+/**
+ * Класс реализующий точку входа.
+ */
 package Seminar_1;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+
 
 public class App {
     public static void main(String[] args) throws IOException {
@@ -35,6 +40,7 @@ public class App {
         //br.printSister("Dmitriyy", tree);
         //bu.uploadToTXT(tree);
         //System.out.println(person.compareTo(person1));
+
 
 
 
