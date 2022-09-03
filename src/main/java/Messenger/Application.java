@@ -1,3 +1,6 @@
+/**
+ * Класс реализующий точку входа.
+ */
 package Messenger;
 
 public class Application {

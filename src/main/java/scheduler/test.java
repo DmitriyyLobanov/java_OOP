@@ -1,3 +1,6 @@
+/**
+ * Класс реализуйщий точку входа.
+ */
 package scheduler;
 
 import java.io.IOException;

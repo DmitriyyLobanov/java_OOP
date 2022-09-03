@@ -1,3 +1,8 @@
+/**
+ * Класс реализующий запись данных генеалогического дерева в файл.
+ * @autor Дмитрий Лобанов
+ * @version 1.0
+ */
 package Seminar_1;
 
 import java.io.FileWriter;
@@ -7,6 +12,11 @@ import java.nio.file.Path;
 
 
 public class UploadToFile implements BaseUploader{
+    /**
+     * Метод реализующий запись в файл .txt
+     * @param tree Экземпляр генеалогического дерева
+     * @throws IOException
+     */
     public void uploadToTXT(BaseTree tree) throws IOException {
 
         try {
@@ -23,6 +33,7 @@ public class UploadToFile implements BaseUploader{
             }
         }
     }
+
 
     @Override
     public void uploadToJSON(Tree tree) throws UnsupportedOperationException {

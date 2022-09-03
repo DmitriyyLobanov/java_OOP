@@ -1,3 +1,6 @@
+/**
+ * Родственные связи, доступные к выбору.
+ */
 package Seminar_1;
 
 public enum Relation {
